@@ -1,27 +1,6 @@
 #include <iostream>
+#include "cylinder.h"
 
-const double PI {3.1415926535897932384626433832795};
-
-//Imp: Members of a class are private by default
-class MyCylinder {
-    double radius{};
-    double height{};
-
-    public:
-        double getter_r() {
-            return radius;
-        }
-        double getter_h() {
-            return height;
-        }
-        void setter(double r, double h) {
-            radius = r;
-            height = h;
-        }
-        double get_volume() {
-            return PI*radius*radius*height;
-        }
-};
 int main () {
 
     MyCylinder cyl1;
